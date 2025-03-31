@@ -102,6 +102,9 @@ docker-compose down
 
 ## Flujo de Tráfico y Middlewares
 
+![image](https://github.com/user-attachments/assets/21395868-2de3-436a-9559-abfbd0485ccf)
+
+
 - **Detección de Servicios:**  
   Traefik monitorea Docker y solo detecta los contenedores que tienen la etiqueta `traefik.enable=true`.
   
