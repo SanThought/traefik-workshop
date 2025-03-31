@@ -27,7 +27,7 @@ services:
       - "traefik.http.routers.api.entrypoints=web"
       # Basic Auth middleware for API (user: admin, password: password)
       - "traefik.http.routers.api.middlewares=api-basic-auth"
-      - "traefik.http.middlewares.api-basic-auth.basicauth.users=admin:$2a$12$yLbDJIc3rkpRKLCR1WBUH.q2ZCaRCRfDDdejPLlz/ZkXJkctk/5Tm"
+      - "traefik.http.middlewares.api-basic-auth.basicauth.users=admin:$$2a$$12$$yLbDJIc3rkpRKLCR1WBUH.q2ZCaRCRfDDdejPLlz/ZkXJkctk/5Tm"
       - "traefik.http.services.api.loadbalancer.server.port=3000"
     networks:
       - web
